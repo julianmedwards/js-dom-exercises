@@ -20,8 +20,23 @@
         <td>Row3 cell2</td>
       </tr>
     </table>
-    <form>
+    <form id="table-form">
+      <input
+        type="number"
+        name="row-num"
+        placeholder="Row #"
+        required
+        autofocus
+      />
+      <input type="number" name="column-num" placeholder="Column #" required />
+      <input
+        type="text"
+        name="cell-text"
+        placeholder="New Cell Text"
+        required
+      />
       <input type="button" onclick="changeContent()" value="Change content" />
     </form>
+    <script src="scripts/06-update-table-cells.js"></script>
   </body>
 </html>
