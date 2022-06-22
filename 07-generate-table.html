@@ -11,9 +11,15 @@
     </style>
   </head>
   <body>
-    <table id="myTable" border="1"></table>
     <form>
-      <input type="button" onclick="createTable()" value="Create the table" />
+      <input type="number" name="rows" placeholder="Row #" autofocus />
+      <input type="number" name="cols" placeholder="Col #" />
+      <input
+        type="button"
+        onclick="createTable(event)"
+        value="Create the table"
+      />
     </form>
+    <script src="scripts/07-generate-table.js"></script>
   </body>
 </html>
